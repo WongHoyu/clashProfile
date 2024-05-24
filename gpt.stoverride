@@ -1,0 +1,22 @@
+name: GPT代理覆写
+desc: GPT相关代理只选择香港之外的代理
+category: GPT
+#>------
+
+rules:
+  - GEOSITE,openai,OpenAI
+  - DOMAIN-SUFFIX,claude.ai,OpenAI
+
+proxy-groups:
+  # 功能分组
+  - name: OpenAI
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
+    type: select
+    proxies:
+      - 自动选择
+      - 手动选择
+      - TW 台湾
+      - SG 新加坡
+      - JP 日本
+      - US 美国
+      - DIRECT
