@@ -4,8 +4,8 @@ category: GPT
 #>------
 
 rules:
-  - GEOSITE,openai,OpenAI
-  - DOMAIN-SUFFIX,claude.ai,OpenAI
+  - PROCESS-NAME,ChatGPT.exe,OpenAI
+  - PROCESS-NAME,Claude.exe,OpenAI
 
 proxy-groups:
   # 功能分组
