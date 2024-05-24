@@ -4,8 +4,10 @@ category: GPT
 #>------
 
 rules:
-  - PROCESS-NAME,ChatGPT.exe,OpenAI
-  - PROCESS-NAME,Claude.exe,OpenAI
+  - DOMAIN-SUFFIX,ai.com,OpenAI
+  - DOMAIN-SUFFIX,claude.ai,OpenAI
+  - DOMAIN-SUFFIX,anthropic.com,OpenAI
+  - DOMAIN-SUFFIX,openai.com,OpenAI
 
 proxy-groups:
   # 功能分组
